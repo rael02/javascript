@@ -1,0 +1,17 @@
+< Html >
+< Head >
+  < Título > Exemplo 14.3  </ title >
+  < Meta  charset = ' utf-8 ' />
+  < Script  type = " text / javascript " >
+   Função  mouse_over () {
+   	Documento . GetElementById ( ' titulo ' ). Estilo . Color = ' black ' ;
+   }
+   Função  mouse_out () {
+   	Documento . GetElementById ( ' titulo ' ). Estilo . Color = ' blue ' ;
+   }
+  </ Script >
+</ Head >
+< Body >
+  < H1  id = " titulo "  onmouseout = " mouse_over () "  onmouseover = " mouse_out () " > JavaScript </ h1 >
+</ Body >
+</ Html >

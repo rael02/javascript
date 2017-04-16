@@ -1,0 +1,20 @@
+< Html >
+< Head >
+  < Metacharset = ' utf-8 ' />
+</ Head >
+< Body >
+< H1 > Tabuada Multiplicação </ h1 >
+  < Script >
+   Para (num1 = 1 ; num1 <= 100 ; num1 ++ ) {
+   Documento . Write ( ' <table border = "1"> ' );
+    Para (num2 = 1 ; num2 <= 10 ; num2 ++ ) {
+     Var res = num1 * num2;
+     Documento . Write ( " <tr> " );
+     Documento . Escreva ( " <td> " + num1 + " * " + num2 + " = " + res + " <br> </ td> " );
+     Documento . Write ( " </ tr> " );
+    }
+    Documento . Write ( " </ table> <br> <br> " );
+   }
+   </ Script >
+</ Body >
+</ Html >

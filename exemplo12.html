@@ -1,0 +1,32 @@
+< Html >
+< Head >
+  < Meta  charset = " utf-8 " />
+  < Título > Exemplo 12 </ title >
+  < Script >
+   Função  cuboDoNumero ( numero ) {
+   	Var cubo = numero * numero * numero;
+   	Return cubo;
+   }
+   Função  evento () {
+   	Var num_valor = janela . Documento . GetElementById ( ' num ' ). Valor ;
+   	Var resl = ' O cubo do número é igual a: ' + cuboDoNumero (num_valor);
+   	Janela . Documento . GetElementById ( ' Mensagem ' ). InnerHTML = resl;
+   }
+   
+  </ Script >
+</ Head >
+< Body >
+  < H1 > Retornando o valor de uma função </ h1 >
+  < Table >
+   < Tr >
+   < Td  width = ' 200 ' > Digite um Número: </ td >
+   < Td  width = ' 30 ' > < input  type = ' text '  id = ' num '  value = ' '  size = ' 3 '  placeholder = ' Digite aqui ' /> </ td >
+   </ Tr >
+   < Tr >
+   < Td  width = ' 30 '  colspan = ' 2 '  align = ' center ' > < tipo de entrada  = ' botão '  valor = ' Calcular '  onclick = ' evento () ' > </ td >
+   </ Tr >
+  </ Table >
+  < Br >
+  < P  id = ' Mensagem ' > </ p >
+</ Body >
+</ Html >

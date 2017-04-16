@@ -1,0 +1,29 @@
+< Html >
+< Head >
+< Título > matriz Associativo </ title >
+ 	< Meta  charset = ' utf-8 ' >
+ 	< Script >
+ 	 Função  evento () {
+ 	 	var Resl = documento . GetElementById ( " optUF " ). Valor ;
+ 	 	Alerta ( " Muito Bem! Você escolheu o estado UF: " + resl);
+ 	 }
+ 	</ Script >
+</ Head >
+< Body >
+< H1 > JavaScript - Array </ h1 >
+ 	< Form  name = ' form1 ' >
+ 		< Br >
+ 	< Script >
+ 	 var estados = { AC : ' Acre ' , AL : ' Alagoas ' , AP : ' Amapá ' , AM : ' Amazonas ' , BA : ' Bahia ' , CE : ' Ceará ' , DF : ' Distrito Federal ' , ES : ' Espírito Santo ' , GO : 'GO ' MA : ' MA ' TA : ' MT ' MS : ' MT do Sul ' MG : ' mineiro ' PA : ' Pará ' PB : ' Paraíba ' PR : ' PR ' , PE : ' Pernambuco ' , PI :' Piauí ' , RJ : ' Rio de Janeiro ' , RN : ' Rio Grande do Norte ' , RS : ' Rio Grande do Sul ' , RO : ' Rondônia ' , RR : ' Roraima ' , SC : ' Santa Catarina ' , SP : ' São Paulo ' , SE : 'Sergipe ' , TO : ' Tocantins ' };
+ 	 // var texto = "<select name = UF>"; Variável para auxiliar na formação da string "
+ 	 Janela . Documento . Write ( " <select name = UF id = optUF> " );
+ 	 Para (uf in estados) {
+ 	 	Janela . Documento . Write ( " <option value = " + uf + " > " + estados [uf] + " </ option> " );
+ 	 }
+ 	 Janela . Documento . Escrever ( " </ select " );
+ 	 </ Script >
+ 	
+</ Form >
+< Input  type = " button "  value = " ok "  onclick = " evento () " />
+</ Body >
+</ Html >
